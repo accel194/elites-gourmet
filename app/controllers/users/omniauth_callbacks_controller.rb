@@ -1,4 +1,4 @@
-class Users::OmniauthCallbacksController < ApplicationController
+class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   
   def facebook
     auth = request.env["omniauth.auth"]
@@ -41,7 +41,7 @@ class Users::OmniauthCallbacksController < ApplicationController
     end
     
     if @user.persisted?
-      set_flash_message(:notice, :success, kind: "Twitter")
+      set_flash_message(:notice, :success, kind: "Twitter") if is_navigational_format?
       sign_in_and_redirect @user, event: :authentication
     else
       session["devise.twitter_data"] = request.env["omniauth"].except("extra")
