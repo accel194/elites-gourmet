@@ -40,6 +40,12 @@ gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 
 gem 'omniauth-line'
+
+gem 'ransack'
+
+gem 'kaminari'
+
+gem 'kaminari-bootstrap'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
