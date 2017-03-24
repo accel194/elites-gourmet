@@ -4,29 +4,33 @@
 .login_logout_wrapper {
   text-align: right;
 }
-  .wrapper.restaurant_input, .wrapper.restaurant_confirm, wrapper.restaurant_index {
-    margin-top: 0;
-  }
-  .restaurant_confirm{
-    tr.image {
-      img {
-        max-width: 380px;
-        max-height: 380px;
-      }
+.wrapper.restaurant_input, .wrapper.restaurant_confirm, .wrapper.restaurant_index, .wrapper.restaurant_show {
+  margin-top: 0;
+}
+.restaurant_confirm{
+  tr.image {
+    img {
+      max-width: 380px;
+      max-height: 380px;
     }
   }
-  ul.genre_list {
-    list-style: none;
-    padding: 0;
-    li {
-      display: inline-block;
-      color: white;
-      background-color: #535353;
-      border-radius: 8px;
-      margin-right: 3px;
-      padding-left: 8px;
-      padding-right: 8px;
-    }
+}
+ul.genre_list {
+  list-style: none;
+  padding: 0;
+  li {
+    display: inline-block;
+    color: white;
+    background-color: #535353;
+    border-radius: 8px;
+    margin-right: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+  
+  .wrapper.restaurant_show {
+    width: 95%;
   }
   
   .wrapper.restaurant_index {
@@ -80,6 +84,44 @@
       
         }  
       }
+    }
+  }
+}
+.wrapper.restaurant_show {
+  .name {
+    float: -left;
+    font-size: 18px;
+  }
+  
+  .operation_restaurant {
+    float: right;
+  }
+  .big_image {
+    text-align: center;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  ul.small_images {
+    list-style: none;
+    padding: 0;
+    li {
+      display: inline-block;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      margin: 15px;
+    }
+  }
+  
+  .info {
+    > div {
+      margin-bottom: 10px;
+    }
+    label {
+      margin-right: 15px;
     }
   }
 }
