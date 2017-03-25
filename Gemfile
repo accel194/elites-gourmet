@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'ckeditor'
+
 gem 'seed-fu'
 
 gem 'gmaps4rails'
