@@ -16,7 +16,7 @@
     <tr>
       <th><%= f.label :description %></th>
       <td><%= raw @restaurant.description %></td>
-        <%= f.hidden_field :description %>
+      <%= f.hidden_field :description %>
     </tr>
       <th><%= f.label :address %></th>
     <td>
@@ -51,7 +51,6 @@
       <td><%= @restaurant.open_date %></td>
       <%= f.hidden_field :open_date %>
     </tr>
-    <tr></tr>
     <%= f.fields_for :restaurant_images do |rf| %>
       <% if rf.object.image? %>
         <tr class="image">
