@@ -13,6 +13,9 @@
         <div class="genres">
           <%= render 'restaurants/genre_list', restaurant: restaurant %>
         </div>
+        <div class="description">
+          <%= strip_tags restaurant.description %>
+        </div>
       </div>
     </div>
   </div>
