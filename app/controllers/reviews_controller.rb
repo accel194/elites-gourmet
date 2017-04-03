@@ -15,8 +15,8 @@ class ReviewsController < ApplicationController
   
   def destroy
     review = Review.find(params[:id])
-    restaurant_id = reiew.restaurant_id
-    review.dastroy!
+    restaurant_id = review.restaurant_id
+    review.destroy!
     flash[:notice] = I18n.t('review.deleted')
     redirect_to restaurant_path(restaurant_id)
   end
